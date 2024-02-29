@@ -12,5 +12,5 @@ cfg = Config()
 bot = telebot.TeleBot(token=cfg.get("TgBot", "token"))
 bot.send_photo(cfg.getint("user", "uid"), photo=png, caption="Полей меня! 💧🌵")
 bot.send_message(cfg.getint("admin", "uid"),
-                 f'Доставлено к uid: {cfg.getint("user", "uid")} в {datetime.now()}')
+                 f'Доставлен "полить кактус" к uid: {cfg.getint("user", "uid")} в {datetime.now()}')
 
